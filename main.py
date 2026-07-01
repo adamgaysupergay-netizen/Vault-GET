@@ -107,7 +107,7 @@ def guess_ext(mime: str) -> str:
 # Roblox download
 # ---------------------------------------------------------------------------
 
-ROBLOX_DOWNLOAD_SEM = asyncio.Semaphore(100)
+ROBLOX_DOWNLOAD_SEM = asyncio.Semaphore(10000)
 
 async def roblox_download(asset_id: str) -> bytes:
     """Download raw encrypted bytes for an asset ID. Handles legacy '1 1234' prefix."""
