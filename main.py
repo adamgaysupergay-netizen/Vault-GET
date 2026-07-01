@@ -267,7 +267,7 @@ if __name__ == "__main__":
     uvicorn.run(
         app,
         host="127.0.0.1",
-        port=44509,
+        port=8000,
         timeout_keep_alive=30,
         proxy_headers=True,
         forwarded_allow_ips="*",
